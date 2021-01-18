@@ -10,20 +10,15 @@ def who_is_bigger(a,b,c)
     end
 end
 
-def reverse_upcase_noLTA
-    return 
+def reverse_upcase_noLTA(x)
+    return x.reverse.upcase.delete!'TLA'
 end
 
 def array_42(array)
-    bite = array.include?(42)
-    return bite
+    x = array.include?(42)
+    return x
 end
 
 def magic_array
     return
 end
-
-def power
-    return
-end
-
