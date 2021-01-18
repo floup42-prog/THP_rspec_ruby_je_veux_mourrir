@@ -3,12 +3,24 @@ require_relative '../lib/03_basics'
 describe 'who is the biggest number' do
   # Hint: 'def who_is_bigger(a, b, c)'
   it 'tells me the biggest' do
-    expect(who_is_bigger(84, 42, nil)).to eq("nil detected")
-    expect(who_is_bigger(nil, 42, 21)).to eq("nil detected")
-    expect(who_is_bigger(84, 42, 21)).to eq("a is bigger")
-    expect(who_is_bigger(42, 84, 21)).to eq("b is bigger")
-    expect(who_is_bigger(42, 21, 84)).to eq("c is bigger")
+  expect(who_is_bigger(84, 42, nil)).to eq("nil detected")do
   end
+
+  it 'tells me the biggest' do
+    expect(who_is_bigger(nil, 42, 21)).to eq("nil detected")do
+    end
+
+    it 'tells me the biggest' do
+    expect(who_is_bigger(84, 42, 21)).to eq("a is bigger")do
+    end
+
+    it 'tells me the biggest' do
+    expect(who_is_bigger(42, 84, 21)).to eq("b is bigger")do
+    end
+    
+    it 'tells me the biggest' do
+    expect(who_is_bigger(42, 21, 84)).to eq("c is bigger")do
+    end
 end
 
 describe 'crazy stuff on strings' do
@@ -16,11 +28,11 @@ describe 'crazy stuff on strings' do
   # Hint: google ruby string
   it 'does crazy stuff on strings' do
     expect(reverse_upcase_noLTA("Tries this at Home, Kids"))
-      .to eq("SDIK ,EMOH  SIH SEIR")
+      .to eq("SDIK ,EMOH  SIH SEIR")do
     expect(reverse_upcase_noLTA("Ponies loves carrots"))
-      .to eq("SORRC SEVO SEINOP")
+      .to eq("SORRC SEVO SEINOP")do
     expect(reverse_upcase_noLTA("qwertyuiopasdfghjkl;zxcvbn"))
-      .to eq("NBVCXZ;KJHGFDSPOIUYREWQ")
+      .to eq("NBVCXZ;KJHGFDSPOIUYREWQ")do
   end
 end
 
